@@ -1,0 +1,107 @@
+#include <stdio.h>
+#include <conio.h>
+
+int main() {
+    // Variables to store user input and score
+    int choice;
+    int score = 0;
+
+    // Introduction
+    printf("Welcome to the Quiz Game!\n");
+    printf("Answer the questions by entering the number of your choice.\n");
+    printf("Let's begin!\n\n");
+
+    // Question 1
+    printf("1. What is the capital of France?\n");
+    printf("   1. Berlin\n");
+    printf("   2. Madrid\n");
+    printf("   3. Paris\n");
+    printf("   4. Rome\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 3) {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is Paris.\n\n");
+    }
+
+    // Question 2
+    printf("2. What is the largest planet in our Solar System?\n");
+    printf("   1. Earth\n");
+    printf("   2. Jupiter\n");
+    printf("   3. Mars\n");
+    printf("   4. Venus\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 2) {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is Jupiter.\n\n");
+    }
+
+    // Question 3
+    printf("3. Who wrote the play 'Romeo and Juliet'?\n");
+    printf("   1. Charles Dickens\n");
+    printf("   2. J.K. Rowling\n");
+    printf("   3. William Shakespeare\n");
+    printf("   4. George Orwell\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 3) {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is William Shakespeare.\n\n");
+    }
+
+    // Question 4
+    printf("4. Which planet is known as the Red Planet?\n");
+    printf("   1. Earth\n");
+    printf("   2. Mars\n");
+    printf("   3. Jupiter\n");
+    printf("   4. Venus\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 2) {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is Mars.\n\n");
+    }
+
+    // Question 5
+    printf("5. What is the capital of India?\n");
+    printf("   1. Mumbai\n");
+    printf("   2. New Delhi\n");
+    printf("   3. Kolkata\n");
+    printf("   4. Chennai\n");
+    printf("Your choice: ");
+    scanf("%d", &choice);
+
+    if (choice == 2) {
+        printf("Correct!\n\n");
+        score++;
+    } else {
+        printf("Wrong! The correct answer is New Delhi.\n\n");
+    }
+
+    // Final score
+    printf("Quiz Over! Your total score is: %d/5\n", score);
+
+    // Feedback for the quiz
+    if (score == 5) {
+        printf("Excellent work! You're a genius!\n");
+    } else if (score >= 3) {
+        printf("Good job! You have a good knowledge base.\n");
+    } else {
+        printf("Keep trying! Practice makes perfect.\n");
+    }
+
+    return 0;
+}
